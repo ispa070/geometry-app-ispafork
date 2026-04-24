@@ -1,15 +1,20 @@
 public class Circle implements Shape {
     private double radius;
-    private double circumference;
-    private double diameter;
 
-    public Circle(double radius, double circumference, double diameter) {
+
+    public Circle(double radius) {
         this.radius = radius;
-        this.circumference = circumference;
-        this.diameter = diameter;
+
+    }
+    @Override
+    public double calculateArea() {
+        return Math.PI * radius * radius;
     }
 
-    public void calculateArea() {}
+    @Override
+    public double calculatePerimeter() {
+        return 2 * Math.PI * radius;
 
-    public void calculatePerimeter() {}
+
+    }
 }
