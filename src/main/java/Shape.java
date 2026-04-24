@@ -1,4 +1,4 @@
 public interface Shape {
-    void calculateArea();
-    void calculatePerimeter();
+    double calculateArea();
+    double calculatePerimeter();
 }
